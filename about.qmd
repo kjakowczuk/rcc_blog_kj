@@ -1,6 +1,6 @@
 ---
 title: "About Me!"
-image: pfp1.jpg
+image: pfp2.jpg
 about:
   template: jolla
   links:
