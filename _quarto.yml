@@ -3,17 +3,17 @@ project:
   output-dir: docs
 
 website:
-  title: "quartoCourseBlog"
+  title: "Kaya's Portfolio"
   navbar:
     right:
       - about.qmd
       - icon: github
         href: https://github.com/CrumpLab/quartoCourseBlog
-      - icon: twitter
-        href: https://twitter.com/MattCrumpLab
+      - icon: linkedin
+        href: https://www.linkedin.com/in/kaya-jakowczuk-142b21230/?trk=public-profile-join-page
 format:
   html:
-    theme: minty
+    theme: lux
     css: styles.css
 
 editor: visual

@@ -1,6 +1,6 @@
 ---
 title: "About Me!"
-image: pfp.jpg
+image: pfp1.jpg
 about:
   template: jolla
   links:
@@ -20,3 +20,17 @@ Welcome to my online R portfolio!
 My name is Kaya and this is my first website I have made by using R and github! :)
 
 August 6th, 2025
+
+# Introduction
+
+# Methods
+
+# Data Source
+
+# Packages Used
+
+# Approach
+
+# Results 
+
+# Discussion
