@@ -11,7 +11,7 @@
     "href": "posts/my_first_post/index.html",
     "title": "My R Project",
     "section": "",
-    "text": "Welcome to my website!! Here, I will be showing off my R portfolio.\nI created this website as part of a course at Dominican University. It was created with R and Quarto in RStudio.\nSpecial show out to Dr. Bob for this awesome summer crash course opportunity."
+    "text": "Welcome to my website!! Here, I will be showing off my R portfolio.\nI created this website as part of a course at Dominican University. It was created with R and Quarto in RStudio.\nSpecial shout out to Dr. Bob for this awesome summer crash course opportunity.\nSpecial thanks to the CrumpLab which made the template for this website available in github: https://github.com/CrumpLab/quartoCourseBlog"
   },
   {
     "objectID": "index.html",
