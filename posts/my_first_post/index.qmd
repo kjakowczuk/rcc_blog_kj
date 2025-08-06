@@ -2,8 +2,9 @@
 title: "My R Project"
 author: "Kaya Jakowczuk"
 date: "August 6, 2025"
-categories: [data science, my project]
 ---
+
+![](/phones.jfif)
 
 Welcome to my website!! Here, I will be showing off my R portfolio.
 
@@ -25,6 +26,6 @@ Special thanks to the CrumpLab which made the template for this website availabl
 
 # Approach
 
-# Results 
+# Results
 
 # Discussion
