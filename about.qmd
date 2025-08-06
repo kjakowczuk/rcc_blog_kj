@@ -17,6 +17,6 @@ about:
 
 The content on this page is from `about.qmd`. Edit that file to change how this page looks.
 
-This is me!!! :D
+Welcome to my online R portfolio! My name is Kaya and this is my first website I have made by using R and github! :)
 
 Try changing the template type from `jolla` to one of the other options for a different look and feel.
