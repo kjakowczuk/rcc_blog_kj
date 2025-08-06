@@ -9,4 +9,6 @@ Welcome to my website!! Here, I will be showing off my R portfolio.
 
 I created this website as part of a course at Dominican University. It was created with R and Quarto in RStudio.
 
-Special show out to Dr. Bob for this awesome summer crash course opportunity.
+Special shout out to Dr. Bob for this awesome summer crash course opportunity.
+
+Special thanks to the CrumpLab which made the template for this website available in github: <https://github.com/CrumpLab/quartoCourseBlog>
