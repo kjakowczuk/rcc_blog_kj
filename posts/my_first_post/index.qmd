@@ -12,3 +12,19 @@ I created this website as part of a course at Dominican University. It was creat
 Special shout out to Dr. Bob for this awesome summer crash course opportunity.
 
 Special thanks to the CrumpLab which made the template for this website available in github: <https://github.com/CrumpLab/quartoCourseBlog>
+
+..............................................................................................................................................
+
+# Introduction
+
+# Methods
+
+# Data Source
+
+# Packages Used
+
+# Approach
+
+# Results 
+
+# Discussion

@@ -4,14 +4,14 @@
     "href": "about.html",
     "title": "About Me!",
     "section": "",
-    "text": "Welcome to my online R portfolio!\nMy name is Kaya and this is my first website I have made by using R and github! :)\nAugust 6th, 2025\n\nIntroduction\n\n\nMethods\n\n\nData Source\n\n\nPackages Used\n\n\nApproach\n\n\nResults\n\n\nDiscussion"
+    "text": "Welcome to my online R portfolio!\nMy name is Kaya and this is my first website showcasing my project. :)\nAugust 6th, 2025"
   },
   {
     "objectID": "posts/my_first_post/index.html",
     "href": "posts/my_first_post/index.html",
     "title": "My R Project",
     "section": "",
-    "text": "Welcome to my website!! Here, I will be showing off my R portfolio.\nI created this website as part of a course at Dominican University. It was created with R and Quarto in RStudio.\nSpecial shout out to Dr. Bob for this awesome summer crash course opportunity.\nSpecial thanks to the CrumpLab which made the template for this website available in github: https://github.com/CrumpLab/quartoCourseBlog"
+    "text": "Welcome to my website!! Here, I will be showing off my R portfolio.\nI created this website as part of a course at Dominican University. It was created with R and Quarto in RStudio.\nSpecial shout out to Dr. Bob for this awesome summer crash course opportunity.\nSpecial thanks to the CrumpLab which made the template for this website available in github: https://github.com/CrumpLab/quartoCourseBlog\n…………………………………………………………………………………………………………………………….\n\nIntroduction\n\n\nMethods\n\n\nData Source\n\n\nPackages Used\n\n\nApproach\n\n\nResults\n\n\nDiscussion"
   },
   {
     "objectID": "index.html",
