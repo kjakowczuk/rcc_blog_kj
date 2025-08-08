@@ -11,7 +11,28 @@
     "href": "posts/my_first_post/index.html",
     "title": "My R Project",
     "section": "",
-    "text": "Welcome to my website!! Here, I will be showing off my R portfolio.\nI created this website as part of a course at Dominican University. It was created with R and Quarto in RStudio.\nSpecial shout out to Dr. Bob for this awesome summer crash course opportunity.\nSpecial thanks to the CrumpLab which made the template for this website available in github: https://github.com/CrumpLab/quartoCourseBlog\n…………………………………………………………………………………………………………………………….\n\nIntroduction\n\n\nMethods\n\n\nData Source\n\n\nPackages Used\n\n\nApproach\n\n\nResults\n\n\nDiscussion"
+    "text": "Welcome to my website!! Here, I will be showing off my R portfolio.\nI created this website as part of a course at Dominican University. It was created with R and Quarto in RStudio.\nSpecial shout out to Dr. Bob for this awesome summer crash course opportunity.\nSpecial thanks to the CrumpLab which made the template for this website available in github: https://github.com/CrumpLab/quartoCourseBlog\n……………………………………………………………………………………………………………………………."
+  },
+  {
+    "objectID": "posts/my_first_post/index.html#data-source",
+    "href": "posts/my_first_post/index.html#data-source",
+    "title": "My R Project",
+    "section": "Data Source",
+    "text": "Data Source\n\nWhat is the source?\n\nSource: Students’ Social Media Addiction\n\nHow was the data collected?\n\nThis data was collected in a one-time online survey administered in the first quarter of the year. Participants are then recruited through their university mailing lists and social-media platforms, ensuring diverse results. This data was collected in 2025.\n\nWhat are the variables included?\n\n\nKey Variables\n\n\n\n\n\n\nVariable\nDescription\n\n\n\n\nStudent_ID\nUnique respondent identifier\n\n\nAge\nAge in years\n\n\nGender\n“Male” or “Female”\n\n\nAcademic_Level\nHigh School / Undergraduate / Graduate\n\n\nCountry\nCountry of residence\n\n\nAvg_Daily_Usage_Hours\nAverage hours per day on social media\n\n\nMost_Used_Platform\nInstagram, Facebook, TikTok, etc.\n\n\nAffects_Academic_Performance\nSelf-reported impact on academics (Yes/No)\n\n\nSleep_Hours_Per_Night\nAverage nightly sleep hours\n\n\nMental_Health_Score\nSelf-rated mental health (1 = poor to 10 = excellent)\n\n\nRelationship_Status\nSingle / In Relationship / Complicated\n\n\nConflicts_Over_Social_Media\nNumber of relationship conflicts due to social media\n\n\nAddicted_Score\nSocial Media Addiction Score (1 = low to 10 = high)\n\n\n\n\nHow many records/rows/participants?\n\nThere are 13 variables with 705 participants, totaling to 706 rows.\n\nAny other relevant information\n\nIn this project, country was changed to region to match the various types of countries listed for ease, but left alone as a variable.\nDuplicate entries were removed due to the unique Student_ID participants entered in the survey.\nThis survey was completely anonymous."
+  },
+  {
+    "objectID": "posts/my_first_post/index.html#packages-used",
+    "href": "posts/my_first_post/index.html#packages-used",
+    "title": "My R Project",
+    "section": "Packages Used",
+    "text": "Packages Used\n\nTools\n\nR and RStudio in Posit.Cloud\nGitHub for website hosting\nggplots2 package\ntidyverse package\nKaggle Data Sets"
+  },
+  {
+    "objectID": "posts/my_first_post/index.html#approach",
+    "href": "posts/my_first_post/index.html#approach",
+    "title": "My R Project",
+    "section": "Approach",
+    "text": "Approach\n\nApproach\n\nFor question 1, I will examine the correlation between Country and Avg_Daily_Usage_Hours.\nFor question 2, I will examine the correlation between Most_Used_Platform and Addicted_Score.\n\nPredictions\n\nI predict that students who live in the Americas spend around six hours on social media platforms.\nI predict the most used social media platform to be Instagram with a high social media addiction score of eight."
   },
   {
     "objectID": "index.html",

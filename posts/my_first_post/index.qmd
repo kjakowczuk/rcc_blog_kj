@@ -4,7 +4,7 @@ author: "Kaya Jakowczuk"
 date: "August 6, 2025"
 ---
 
-![](/phones.jfif)
+![](/phones.jfif){fig-align="center"}
 
 Welcome to my website!! Here, I will be showing off my R portfolio.
 
@@ -18,14 +18,213 @@ Special thanks to the CrumpLab which made the template for this website availabl
 
 # Introduction
 
+Questions
+
+1.) Which region has the most hours spent on social media platforms?
+
+2.) What's the most used social media platform and what's the social media addiction score?
+
+Predictions
+
+I predict a positive relationship occurring in which students who live in the United States spend the most hours on Instagram with a social media addiction score falling in between the 8-10 range, with a median score of 8.
+
+Data Source
+
+-   Students' Social Media Addiction: <https://www.kaggle.com/datasets/adilshamim8/social-media-addiction-vs-relationships/data>
+
 # Methods
 
-# Data Source
+## Data Source
 
-# Packages Used
+-   What is the source?
 
-# Approach
+    -   Source: Students' Social Media Addiction
+
+-   How was the data collected?
+
+    -   This data was collected in a one-time online survey administered in the first quarter of the year. Participants are then recruited through their university mailing lists and social-media platforms, ensuring diverse results. This data was collected in 2025.
+
+-   What are the variables included?
+
+| Variable | Description |
+|---------------------------------------|---------------------------------|
+| Student_ID | Unique respondent identifier |
+| Age | Age in years |
+| Gender | "Male" or "Female" |
+| Academic_Level | High School / Undergraduate / Graduate |
+| Country | Country of residence |
+| Avg_Daily_Usage_Hours | Average hours per day on social media |
+| Most_Used_Platform | Instagram, Facebook, TikTok, etc. |
+| Affects_Academic_Performance | Self-reported impact on academics (Yes/No) |
+| Sleep_Hours_Per_Night | Average nightly sleep hours |
+| Mental_Health_Score | Self-rated mental health (1 = poor to 10 = excellent) |
+| Relationship_Status | Single / In Relationship / Complicated |
+| Conflicts_Over_Social_Media | Number of relationship conflicts due to social media |
+| Addicted_Score | Social Media Addiction Score (1 = low to 10 = high) |
+
+: Key Variables
+
+-   How many records/rows/participants?
+
+    -   There are 13 variables with 705 participants, totaling to 706 rows.
+
+-   Any other relevant information
+
+    -   In this project, country was changed to region to match the various types of countries listed for ease, but left alone as a variable.
+
+    -   Duplicate entries were removed due to the unique Student_ID participants entered in the survey.
+
+    -   This survey was completely anonymous.
+
+## Packages Used
+
+-   Tools
+
+    -   R and RStudio in Posit.Cloud
+
+    -   GitHub for website hosting
+
+    -   ggplots2 package
+
+    -   tidyverse package
+
+    -   Kaggle Data Sets
+
+## Approach
+
+-   Approach
+
+    -   For question 1, I will examine the correlation between Country and Avg_Daily_Usage_Hours.
+
+    -   For question 2, I will examine the correlation between Most_Used_Platform and Addicted_Score.
+
+-   Predictions
+
+    -   I predict that students who live in the Americas spend around six hours on social media platforms.
+
+    -   I predict the most used social media platform to be Instagram with a high social media addiction score of eight.
 
 # Results
 
+### Question 1 - Which region has the most hours spent on social media platforms?
+
+-   Code:
+
+    ```{r}
+    #install.packages("ggplot2")
+    library(ggplot2)
+    library(tidyverse)
+
+
+    students_social_media_addiction <- read.csv("Students Social Media Addiction.csv")
+    region_mapping <- read.csv("all.csv")
+
+    students_social_media_addiction$Country <- gsub(
+      "USA",
+      "United States of America",
+      students_social_media_addiction$Country
+    )
+
+    students_social_media_addiction$Country <- gsub(
+      "UK",
+      "United Kingdom of Great Britain and Northern Ireland",
+      students_social_media_addiction$Country
+    )
+
+    students_social_media_addiction$Country <- gsub(
+      "South Korea",
+      "Korea, Democratic People's Republic of",
+      students_social_media_addiction$Country
+    )
+
+    students_social_media_addiction$Country <- gsub(
+      "Russia",
+      "Russian Federation",
+      students_social_media_addiction$Country
+    )
+
+    students_social_media_addiction$Country <- gsub(
+      "Netherlands",
+      "Netherlands, Kingdom of the",
+      students_social_media_addiction$Country
+    )
+
+    students_social_media_addiction$Country <- gsub(
+      "Vietnam",
+      "Viet Nam",
+      students_social_media_addiction$Country
+    )
+
+
+    students_social_media_addiction$region <- 
+      region_mapping[
+        match(students_social_media_addiction$Country, region_mapping$name),
+        "region"
+      ]
+
+    students_social_media_addiction <- students_social_media_addiction |>
+      filter(!is.na(region))
+
+
+    ggplot(students_social_media_addiction) + 
+      stat_summary(
+        aes(x = Avg_Daily_Usage_Hours, y = region),
+        fun.min = min,
+        fun.max = max,
+        fun = mean
+      ) + labs(
+        title = "Average Daily Hours Spent on Platforms by Region"
+      )
+
+    # ggsave(filename = "avg_hrs_spent_by_region.png")
+    ```
+
+-   In conclusion, the Americas region has the highest average daily usage hours on social media platforms.
+
+### Question 2 - What's the most used social media platform and what's the social media addiction score?
+
+#### Graph 1
+
+-   Code:
+
+```{r}
+library(ggplot2)
+#install.packages("ggplot2")
+
+students_social_media_addiction <- read.csv("Students Social Media Addiction.csv")
+
+ggplot(
+  data = students_social_media_addiction,
+  mapping = aes(y = Most_Used_Platform))+ geom_bar(fill = "blue", alpha = 0.5) + labs(
+    title = "Most Used Social Media Platform"
+  )
+
+#ggsave(filename = "most_used_platform.png")
+```
+
+-   In conclusion, Instagram is the most used social media platform.
+
+#### Graph 2
+
+-   Code:
+
+```{r}
+library(ggplot2)
+#install.packages("ggplot2")
+
+students_social_media_addiction <- read.csv("Students Social Media Addiction.csv")
+
+ggplot(
+  data = students_social_media_addiction,
+  mapping = aes(y = Most_Used_Platform, x = Addicted_Score)) + geom_boxplot(fill = "blue", alpha = 0.5) + labs(
+    title = "Addicted Score vs. Most Used Platform"
+  ) 
+
+#ggsave(filename = "addicted_score_vs_platform.png")
+```
+
+-   In conclusion, Instagram's social media addiction score is between 5-8, with the highest median score of 7.
+
 # Discussion
+
+-   Overall, my hypothesis is supported and therefore I believe it more. The reason being is that I claimed students living in the United States, so in the Americas region, spend the most hours on social media platforms. Initially, I had Tiktok as my predicted most used platform, but I changed it to Instagram instead since I believe students, like myself, use that platform the most. At first, I predicted that students would fall in the 8-10 range for the social media addiction score on Instagram. This prediction isn't completely wrong, however the score range I predicted was too high and predicted median was one higher than the resulted median.
